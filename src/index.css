@@ -3,3 +3,19 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.colorPallete1 {
+  background: rgb(70,178,101);
+}
+.colorPallete2 {
+  background: rgb(130,255,166);
+}
+.colorPallete3 {
+  background: rgb(57,255,113);
+}
+.colorPallete4 {
+  background: rgb(178,108,108);
+}
+.colorPallete5 {
+  background: rgb(255,80,80);
+}

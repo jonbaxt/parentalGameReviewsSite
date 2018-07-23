@@ -1,0 +1,7 @@
+.gameListItemMain {
+    width: 95%;
+    height: 10vh;
+    background: rgb(130,255,166);
+    box-shadow: 1px 1px 2px rgb(57,255,113); 
+    margin: 10px;
+}
