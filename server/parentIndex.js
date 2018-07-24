@@ -23,6 +23,12 @@ app.use(express.static(`${__dirname}/../build`));
 app.use( bodyParser.json());
 
 
+app.get('/api/gamedata/byName/:gameName', con.getGamesByName);
+
 app.get('/api/gamedata', con.getGameDataFromServer);
+app.get('/api/gamedataV2', con.getGameDataFromServerV2);
+app.get('/api/gamedata/byid/:id', con.gameDataById);
+app.get('/api/gamedata/sonicgames', con.sonicGames);
+app.get('/api/gamedata/getall', con.gameCallByWhole);
 
 app.listen(SERVER_PORT, ()=> console.log(`Connect on port ${SERVER_PORT}`));
