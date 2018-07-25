@@ -1,0 +1,13 @@
+.sliderFormat {
+    width: 25%;
+    margin: 0 auto;
+
+}
+.imageCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imageCont>img {
+    width: 200px;
+}

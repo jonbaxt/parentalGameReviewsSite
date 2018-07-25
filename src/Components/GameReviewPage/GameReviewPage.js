@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getGameInfoFromDb, getGameArtworkFromDb, getGameScreenshotsFromDb } from '../../dux/reducer';
+import ScreenShotSlideshow from '../ScreenShotSlideshow/ScreenShotSlideshow';
+import ArtworkSlideshow from '../ArtworkSlideshow/ArtworkSlideshow';
 import './GameReviewPage.css';
 const _ = require('lodash');
 
@@ -16,21 +18,15 @@ class GameReviewPage extends React.Component {
     }
     render() {
         let gameId = this.props.match.params.id - 1;
-        let screenShots = _.findIndex(this.props.gameScreenShots, (current)=>  current.gameinfo_id === gameId+1) !== -1 ? 'Go to ScreenShot Component' : 'No Screenshots Available';
-        let gameArt = _.findIndex( this.props.gameArtwork, (current)=> current.gameinfo_id === gameId+1 ) !== -1 ? 'Go to Artwork Component' : <p>No artwork stored for this title.</p>
-        // (this.props.gameScreenShots.gameinfo_id, gameId+1);
-        //   this.props.gameScreenShots.find((val)=> val === gameId+1);
-        // if(this.props.gameScreenShots.length !== 0){
-        // screenShots = this.props.gameScreenShots.map((elem)=> elem);
-        // }
-        console.log(screenShots);
+        let screenShots = _.findIndex(this.props.gameScreenShots, (current)=>  current.gameinfo_id === gameId+1) !== -1 ? <ScreenShotSlideshow gameId={gameId+1}/> : 'No Screenshots Available';
+        let gameArt = _.findIndex( this.props.gameArtwork, (current)=> current.gameinfo_id === gameId+1 ) !== -1 ? <ArtworkSlideshow gameId={gameId+1} /> : <p>No artwork stored for this title.</p>
         return (
             <div className='reviewPageMain'>
                 <Link to='/'>Back to Home Page</Link>
                 <header className='gameTopBlurb' >
                     <h1>{this.props.gameInfo[gameId].game_name}</h1>
                     <h2>IGDB Game Rating: {this.props.gameInfo[gameId].igdb_rating}</h2>
-                    <h2>Parental Game Overall Rating:<span role='image'>🔥🔥🔥🔥🔥</span> </h2>
+                    <h2>Parental Game Overall Rating:<span role='img'>🔥🔥🔥🔥🔥</span> </h2>
                     <span>
                     <img src={'http://' + this.props.gameInfo[gameId].cover_img_url } alt='' /></span>
                 <h3>Game Summary</h3>
