@@ -10,9 +10,9 @@ import './HomeScreen.css';
 class HomeScreen extends Component {
 
     componentDidMount() {
-        // if (this.props.gameInfo.length === 0) {
+        if (this.props.gameInfo === 'no data') {
             this.props.getGameInfoFromDb();
-        // }
+        }
         if (this.props.gameArtwork.length === 0) {
             this.props.getGameArtworkFromDb();
         }
@@ -23,9 +23,9 @@ class HomeScreen extends Component {
 
     render() {
         let gamelist = ''
-        if (this.props.gameInfo.length !== 0) {
+        if (this.props.gameInfo !== 'no data') {
             gamelist = this.props.gameInfo.map((element, index) => {
-                return <div key={element.id}><GameListItem gameIdNumber={element.id} /></div>
+                return <div key={element.id}><GameListItem gameInf={element} /></div>
             })
         }
         return (
@@ -39,18 +39,12 @@ class HomeScreen extends Component {
                     </div>
                 </div>
                 <div className='gamesDisplayArea bordTemp'>
+                    <h2>Games with Reviews from our parent contributors</h2>
                     {gamelist}
-
-                    {/* <GameListItem /> */}
-
-                    {/* <GameListItem /> */}
-
-                    {/* <GameListItem /> */}
-
-                    {/* <GameListItem /> */}
                 </div>
                 <footer className='footerArea bordTemp'>
-                    <h4>Site Created By: Jonathan Baxter</h4>
+                    <h6>Site Created By: Jonathan Baxter</h6>
+                    <h6>This site uses content from igdb.com's database. For more information on the games, feel free to go to <a href='http://igdb.com'>igdb.com</a> for more information.</h6>
                 </footer>
             </div>
         )

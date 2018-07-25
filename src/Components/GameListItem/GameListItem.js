@@ -3,19 +3,24 @@ import { connect } from 'react-redux';
 import './GameListItem.css';
 
 function GameListItem(props) {
-    let index = props.gameInfo.findIndex(()=> props.gameIdNumber === 'id')
-
-    console.log(index)
-    return(
+    console.log(props.gameInf)
+    let rating = props.gameInf.igdb_rating !== null ? props.gameInf.igdb_rating : 'No rating';
+    return (
         <div className='gameListItemMain'>
-            <p>Game Name</p>
-            <p>Number of Reviews</p>
+            <h1>{props.gameInf.game_name}</h1><br />
+            <div className='flR'>
+                <img src={'http://' + props.gameInf.cover_img_url} alt='' /><br />
+                <div>
+                    <h3>Released: {props.gameInf.release_date}</h3>
+                    <h3>IGDB Rating: {rating}</h3>
+                </div>
+            </div>
         </div>
     )
 }
-function mapStateToProps(state){
+function mapStateToProps(state) {
     return {
         gameInfo: state.gameInfo
     }
 }
-export default connect(mapStateToProps, null)( GameListItem );
+export default connect(mapStateToProps, null)(GameListItem);

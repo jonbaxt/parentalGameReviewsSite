@@ -32,7 +32,9 @@
 
 .footerArea {
     width: 100%;
-    height: 10vh;
+    height: 5vh;
+    text-align: center;
+    font-size: 10px;
 }
 
 .bordTemp {
