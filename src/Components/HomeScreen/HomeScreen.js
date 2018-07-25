@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { getGameInfoFromDb, getGameArtworkFromDb, getGameScreenshotsFromDb } from '../../dux/reducer';
 
 import TitleArea from '../TitleArea/TitleArea';
@@ -25,7 +26,7 @@ class HomeScreen extends Component {
         let gamelist = ''
         if (this.props.gameInfo !== 'no data') {
             gamelist = this.props.gameInfo.map((element, index) => {
-                return <div key={element.id}><GameListItem gameInf={element} /></div>
+                return <div key={element.id}><Link style={{ textDecorationLine: 'none', color: 'black' }} to={`/reviewPage/${element.id}`}><GameListItem gameInf={element} /></Link></div>
             })
         }
         return (
@@ -38,14 +39,10 @@ class HomeScreen extends Component {
                         <SearchBar />
                     </div>
                 </div>
-                <div className='gamesDisplayArea bordTemp'>
+                <div className='gamesDisplayArea'>
                     <h2>Games with Reviews from our parent contributors</h2>
                     {gamelist}
                 </div>
-                <footer className='footerArea bordTemp'>
-                    <h6>Site Created By: Jonathan Baxter</h6>
-                    <h6>This site uses content from igdb.com's database. For more information on the games, feel free to go to <a href='http://igdb.com'>igdb.com</a> for more information.</h6>
-                </footer>
             </div>
         )
     }

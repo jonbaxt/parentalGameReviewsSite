@@ -1,3 +1,40 @@
 .reviewPageMain {
     width: 100vw;
+    /* padding: 10px; */
+}
+
+.b { border: 1px solid black; }
+
+.gameTopBlurb {
+    width: 99%;
+    padding: 10px;
+    /* height: 100px; */
+    background: rgb(130,255,166);
+    box-shadow: 1px 1px 2px rgb(255,80,80); 
+    margin: 0 auto;
+}
+.gameTopBlurb>h1 {
+    font-size: 40px;
+}
+.gameTopBlurb>h2 {
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+.gameTopBlurb>span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.gameTopBlurb>span>img {
+    width: 150px;
+}
+.gameTopBlurb>h3 {
+    text-decoration-line: underline;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+.gameTopBlurb>p {
+    font-size: 15px;
+    margin-bottom: 4px;
 }
