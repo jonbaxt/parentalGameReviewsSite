@@ -31,4 +31,9 @@ app.get('/api/gamedata/byid/:id', con.gameDataById);
 app.get('/api/gamedata/sonicgames', con.sonicGames);
 app.get('/api/gamedata/getall', con.gameCallByWhole);
 
+//SQL Database calls
+app.get('/api/getgamedatafromdb', con.getSavedGameInfoFromIGDB);
+app.get('/api/getgameartworkfromdb', con.getGameArtwork);
+app.get('/api/getgamescreenshotsfromdb', con.getGameScreenShots);
+
 app.listen(SERVER_PORT, ()=> console.log(`Connect on port ${SERVER_PORT}`));

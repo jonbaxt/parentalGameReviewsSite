@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
-
-import HomeScreen from './Components/HomeScreen/HomeScreen';
+import Routes from './routes';
 import './reset.css';
 import './App.css';
 
@@ -10,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <HomeScreen />
+        <Routes />
       </div>
     );
   }
