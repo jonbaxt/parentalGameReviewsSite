@@ -1,9 +1,11 @@
 import React from 'react';
-
+import { connect } from 'react-redux';
 import './GameListItem.css';
 
-function GameListItem() {
+function GameListItem(props) {
+    let index = props.gameInfo.findIndex(()=> props.gameIdNumber === 'id')
 
+    console.log(index)
     return(
         <div className='gameListItemMain'>
             <p>Game Name</p>
@@ -11,5 +13,9 @@ function GameListItem() {
         </div>
     )
 }
-
-export default GameListItem;
+function mapStateToProps(state){
+    return {
+        gameInfo: state.gameInfo
+    }
+}
+export default connect(mapStateToProps, null)( GameListItem );

@@ -21,7 +21,7 @@ export function getGameInfoFromDb() {
     }
 }
 
-export function gameGameArtworkFromDb() {
+export function getGameArtworkFromDb() {
     let gameArt = axios.get('/api/getgameartworkfromdb').then( (res) => {
         return res.data;
     }).catch( err => console.log(err));
