@@ -41,6 +41,7 @@ class HomeScreen extends Component {
                 </div>
                 <div className='gamesDisplayArea'>
                     <h2>Games with Reviews from our parent contributors</h2>
+                    <h3>Purpose of site: <br/>For parents to help each other recommend good games for their kids to play and also tell people what their kids should avoid.</h3>
                     {gamelist}
                 </div>
             </div>

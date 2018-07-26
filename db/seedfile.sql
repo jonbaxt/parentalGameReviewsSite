@@ -183,6 +183,72 @@ CREATE TABLE IF NOT EXISTS GameReviewPosts (
     recommendation TEXT
 );
 
+INSERT INTO GameReviewPosts
+(GameInfo_id, username, user_img_url, user_rating, user_review, recommendation)
+VALUES
+(1, 'ParentWatcher31', 'https://st2.depositphotos.com/1007027/10184/i/950/depositphotos_101842076-stock-photo-father-and-son-kid-dad.jpg', 4, 'This game is your standard racing game with some cartoon violence. Nothing that I would say is innappropriate just a standard racing game like I said.', 'Playable for all ages. Your classic racing game.'),
+(1, 'PicardParent95', 'https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fredshirtsalwaysdie.com%2Ffiles%2F2016%2F06%2FStar-Trek-Picard-MusicBrainz-Picard.jpg&w=850&h=560&c=sc', 3, 'I like to have my children play in space the final frontier personally. This game is not in space, but it is clean for children. It won`t give them harm.', 'Not a space game, but appropriate for kids I suppose.'),
+(1, 'RaceTrackRaider', 'https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Speed_Racer_promotional_image.jpg/220px-Speed_Racer_promotional_image.jpg', 5, 'It is the best game ever!!! I love racing games and kids love racing games! What more would you want for your chid???', 'Let your kids play it! It`s clean and fun!'),
+(1, 'MarioKarter', 'https://mariokart8.nintendo.com/assets/img/top/char_mario.png', 4, 'I love Mario Kart and this is a good game. It`s clean and it should be fine for your kids to play with you. I`d rather see it have Mario and the special power shells I am used to, but it is still a fun game for the whole family to enjoy.', 'Its racing, but not Mario, so it`s almost perfect. Give it a try.'),
+(1, 'SuperSonicFanatic', 'https://vignette.wikia.nocookie.net/sonic/images/f/fc/Hyper_sonic.gif/revision/latest?cb=20160903061927', 5, 'Anything Sonic is fairly clean. Unlike Shadow the Hedgehog, this game has no language problems, just the cartoon violence you are used to in a Sonic game. Give it a try. You`ll like it especially if you like Sonic and Sonic is made for kids in mind first.', 'Totally worth playing many hours.'),
+(1, 'DiabloLordOfTerror', 'http://bloody-disgusting.com/wp-content/uploads/2018/01/diablo03.jpg', 3, 'The Lord of Terror would like to see more gore personally, but for kids, this is suitable for babies. You can play this and won`t wet your pants.', 'It`s fine for kids.'),
+
+(2, 'PicardParent95', 'https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fredshirtsalwaysdie.com%2Ffiles%2F2016%2F06%2FStar-Trek-Picard-MusicBrainz-Picard.jpg&w=850&h=560&c=sc', 3, 'The sequel to the racing game that is not about racing space. The cars are now floating so they are closer to spaceships somewhat, but they are not the USS enterprise.', 'Not a space game, but appropriate for kids.'),
+(2, 'MarioKarter', 'https://mariokart8.nintendo.com/assets/img/top/char_mario.png', 4, 'Like the first game, it is a racing game like Mario Kart. It is clean for kids and has new gimmicks to the overall way to play the game. Give it a go, you will probably enjoy it with kids.', 'Great for all ages'),
+(2, 'DiabloLordOfTerror', 'http://bloody-disgusting.com/wp-content/uploads/2018/01/diablo03.jpg', 3, 'I seriously do not know why I spend time playing games without the dark lord in them. They bore me, but since I am helping with these ratings as a personal debt I need to pay back for my soul to give to the dark lord, I must continue.', 'It`s fine for kids. Anything with the dark lord is more fun than this though.'),
+(2, 'SuperSonicFanatic', 'https://vignette.wikia.nocookie.net/sonic/images/f/fc/Hyper_sonic.gif/revision/latest?cb=20160903061927', 5, 'By far a great upgrade from the first game. More features, more racing, more fun for kids and adults. Like Sonic? Play it, won`t regret it.', 'Great for everyone. Try it.'),
+(2, 'ParentWatcher31', 'https://st2.depositphotos.com/1007027/10184/i/950/depositphotos_101842076-stock-photo-father-and-son-kid-dad.jpg', 5, 'Seems like a fun game for kids. My boys will enjoy it at least, it`s clean and friendly.', 'Good for kids. Recommended.'),
+(2, 'RaceTrackRaider', 'https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Speed_Racer_promotional_image.jpg/220px-Speed_Racer_promotional_image.jpg', 5, 'PLAY PLAY PLAY! BUY BUY BUY! NOW NOW NOW! Great game and will be best time for kids!', 'GET IT!'),
+
+(3, 'SuperSonicFanatic', 'https://vignette.wikia.nocookie.net/sonic/images/f/fc/Hyper_sonic.gif/revision/latest?cb=20160903061927', 5, 'Great game. Not as good as 2D Sonic, but still fun and is fine for kids.', 'Fine for kids and fun. Play it.'),
+(3, 'MarioKarter', 'https://mariokart8.nintendo.com/assets/img/top/char_mario.png', 2, 'Not Mario, but ok for kids. Personally didn`t like it as much, but kids could still play it and have fun.', 'Fine for kids. They could play it.'),
+(3, 'RaceTrackRaider', 'https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Speed_Racer_promotional_image.jpg/220px-Speed_Racer_promotional_image.jpg', 4, 'Still faster gameplay than Mario, but not a recing title. Good for kids.', 'Good for any ages.'),
+(3, 'DiabloLordOfTerror', 'http://bloody-disgusting.com/wp-content/uploads/2018/01/diablo03.jpg', 3, 'The dark lord would by far cremate this spiny creature and enjoy it.', 'Clean for kids. Needs more fire and brimstone.'),
+(3, 'PicardParent95', 'https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fredshirtsalwaysdie.com%2Ffiles%2F2016%2F06%2FStar-Trek-Picard-MusicBrainz-Picard.jpg&w=850&h=560&c=sc', 3, 'These games are fine children I suppose. There is no educational value of showing space the final frontier though.', 'Fine, but could use the element of space.'),
+(3, 'ParentWatcher31', 'https://st2.depositphotos.com/1007027/10184/i/950/depositphotos_101842076-stock-photo-father-and-son-kid-dad.jpg', 5, 'Fine game for kids. Clean, no violence and the hedgehog saves tiny creatures.', 'Good morals taught, go for it.'),
+
+(4, 'SuperSonicFanatic', 'https://vignette.wikia.nocookie.net/sonic/images/f/fc/Hyper_sonic.gif/revision/latest?cb=20160903061927', 5, 'Pinnacle of Sonic the Hedgehog combining to games and making a great best experience for any child and person ever.', 'Sonic at his finest. Must play.'),
+(4, 'DiabloLordOfTerror', 'http://bloody-disgusting.com/wp-content/uploads/2018/01/diablo03.jpg', 3, 'I seriously feel I would hurt that hedgehog if given the opportunity. At least there is fire in the game.', 'There`s fire, so it is already better than other games I`ve reviewed for this site.'),
+(4, 'MarioKarter', 'https://mariokart8.nintendo.com/assets/img/top/char_mario.png', 2, 'No, not Mario. Just no. Fine kids I suppose. Not my cup or tea though.', 'Try it if you want, kids wont die, but not Mario.'),
+(4, 'ParentWatcher31', 'https://st2.depositphotos.com/1007027/10184/i/950/depositphotos_101842076-stock-photo-father-and-son-kid-dad.jpg', 4, 'I had so many game overs in this game, but seems fun for kids.', 'Fine for kids.'),
+(4, 'RaceTrackRaider', 'https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Speed_Racer_promotional_image.jpg/220px-Speed_Racer_promotional_image.jpg', 3, 'Fast paced game. Not as fast as racing in a car though.', 'Good for kids.'),
+(4, 'PicardParent95', 'https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fredshirtsalwaysdie.com%2Ffiles%2F2016%2F06%2FStar-Trek-Picard-MusicBrainz-Picard.jpg&w=850&h=560&c=sc', 3, 'Seriously, I can imagine the hedgehog is on an away mission and then has to battle in space. Closer since there is a space battle at the end.', 'Better than I thought it would be since space was involved eventually.'),
+
+(5, 'SuperSonicFanatic', 'https://vignette.wikia.nocookie.net/sonic/images/f/fc/Hyper_sonic.gif/revision/latest?cb=20160903061927', 5, 'If you want to play a 3D Sonic game, this is a blast. You`ll love it and so will the kids.', 'Kids should at lesat try it.'),
+(5, 'PicardParent95', 'https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fredshirtsalwaysdie.com%2Ffiles%2F2016%2F06%2FStar-Trek-Picard-MusicBrainz-Picard.jpg&w=850&h=560&c=sc', 4, 'Lots of space violence. My kind of game. And clean for kids.', 'Definitely play it for the space part of the game.'),
+(5, 'MarioKarter', 'https://mariokart8.nintendo.com/assets/img/top/char_mario.png', 2, 'Not Mario, Not Mario, Not Mario.', 'Fine for kids.'),
+(5, 'DiabloLordOfTerror', 'http://bloody-disgusting.com/wp-content/uploads/2018/01/diablo03.jpg', 3, 'There was a part where Sonic almost died. It would have been better. Then he survived.', 'Kids wont be scarred for life.'),
+(5, 'ParentWatcher31', 'https://st2.depositphotos.com/1007027/10184/i/950/depositphotos_101842076-stock-photo-father-and-son-kid-dad.jpg', 4, 'Hard game, but didn`t see antyhing that would make me worried for kids.', 'Kids should try it.'),
+(5, 'RaceTrackRaider', 'https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Speed_Racer_promotional_image.jpg/220px-Speed_Racer_promotional_image.jpg', 4, 'Fast gameplay, not as fast without a car, but there is a kart race part so it makes it better plus a mini game for it. Try it. Kids should enjoy.', 'Fast paced and fast for kids.'),
+
+(6, 'DiabloLordOfTerror', 'http://bloody-disgusting.com/wp-content/uploads/2018/01/diablo03.jpg', 5, 'Finally! The gore, the violence! All kids should play this!', 'All should play!'),
+(6, 'SuperSonicFanatic', 'https://vignette.wikia.nocookie.net/sonic/images/f/fc/Hyper_sonic.gif/revision/latest?cb=20160903061927', 1, 'Fun as a game, definitely for kids though. Lots of violence, death and blood.', 'Wouldn`t recommend for kids.'),
+(6, 'MarioKarter', 'https://mariokart8.nintendo.com/assets/img/top/char_mario.png', 1, 'Slow, clunky, graphic, and not for kids.', 'No'),
+(6, 'RaceTrackRaider', 'https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Speed_Racer_promotional_image.jpg/220px-Speed_Racer_promotional_image.jpg', 1, 'What did I just play, not for young kids. If older, some explanation will be needed if played by kids.', 'Find a racing game instead.'),
+(6, 'ParentWatcher31', 'https://st2.depositphotos.com/1007027/10184/i/950/depositphotos_101842076-stock-photo-father-and-son-kid-dad.jpg', 1, 'I`m sure there is a market for this, but would not recommend for kids.', 'Adults only. Rated Mature for a reason.'),
+(6, 'PicardParent95', 'https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fredshirtsalwaysdie.com%2Ffiles%2F2016%2F06%2FStar-Trek-Picard-MusicBrainz-Picard.jpg&w=850&h=560&c=sc', 2, 'Teaches basic survival skills which is good for space, but I would not want my nephew to play this.', 'No, play in space, not in blood.'),
+
+(7, 'DiabloLordOfTerror', 'http://bloody-disgusting.com/wp-content/uploads/2018/01/diablo03.jpg', 5, 'YES!!! The Dark Lord in full form! All children will benefit from his terror and wisdom!', 'All need to hear his wisdom!'),
+(7, 'ParentWatcher31', 'https://st2.depositphotos.com/1007027/10184/i/950/depositphotos_101842076-stock-photo-father-and-son-kid-dad.jpg', 1, 'No, keep kids away. Will give nightmares. Music, violence, everything.', 'Steer clear')
+-- ,
+
+
+
+
+-- Currently Inserting More HERE
+
+
+-- (),
+-- Templates for the Posts for more data.
+-- (1, 'DiabloLordOfTerror', 'http://bloody-disgusting.com/wp-content/uploads/2018/01/diablo03.jpg', 3, '', ''),
+-- (1, 'SuperSonicFanatic', 'https://vignette.wikia.nocookie.net/sonic/images/f/fc/Hyper_sonic.gif/revision/latest?cb=20160903061927', 5, '', ''),
+-- (1, 'MarioKarter', 'https://mariokart8.nintendo.com/assets/img/top/char_mario.png', 4, '', ''),
+-- (1, 'RaceTrackRaider', 'https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Speed_Racer_promotional_image.jpg/220px-Speed_Racer_promotional_image.jpg', 5, '', ''),
+-- (1, 'PicardParent95', 'https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fredshirtsalwaysdie.com%2Ffiles%2F2016%2F06%2FStar-Trek-Picard-MusicBrainz-Picard.jpg&w=850&h=560&c=sc', 3, '', ''),
+-- (1, 'ParentWatcher31', 'https://st2.depositphotos.com/1007027/10184/i/950/depositphotos_101842076-stock-photo-father-and-son-kid-dad.jpg', 4, '', '')
+;
+
+
 CREATE TABLE IF NOT EXISTS PostComments (
     comments_id SERIAL PRIMARY KEY,
     username TEXT,
