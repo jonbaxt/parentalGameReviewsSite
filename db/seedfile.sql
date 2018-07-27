@@ -229,24 +229,49 @@ VALUES
 (6, 'PicardParent95', 'https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fredshirtsalwaysdie.com%2Ffiles%2F2016%2F06%2FStar-Trek-Picard-MusicBrainz-Picard.jpg&w=850&h=560&c=sc', 2, 'Teaches basic survival skills which is good for space, but I would not want my nephew to play this.', 'No, play in space, not in blood.'),
 
 (7, 'DiabloLordOfTerror', 'http://bloody-disgusting.com/wp-content/uploads/2018/01/diablo03.jpg', 5, 'YES!!! The Dark Lord in full form! All children will benefit from his terror and wisdom!', 'All need to hear his wisdom!'),
-(7, 'ParentWatcher31', 'https://st2.depositphotos.com/1007027/10184/i/950/depositphotos_101842076-stock-photo-father-and-son-kid-dad.jpg', 1, 'No, keep kids away. Will give nightmares. Music, violence, everything.', 'Steer clear')
--- ,
+(7, 'ParentWatcher31', 'https://st2.depositphotos.com/1007027/10184/i/950/depositphotos_101842076-stock-photo-father-and-son-kid-dad.jpg', 1, 'No, keep kids away. Will give nightmares. Music, violence, everything.', 'Steer clear'),
+(7, 'SuperSonicFanatic', 'https://vignette.wikia.nocookie.net/sonic/images/f/fc/Hyper_sonic.gif/revision/latest?cb=20160903061927', 1, 'Not child friendly. Lots of blood and violence. There may be lots of explanations to have here to make sure that your kids understand this if you let them play this game.', 'Just skip this'),
+(7, 'MarioKarter', 'https://mariokart8.nintendo.com/assets/img/top/char_mario.png', 1, 'Game is definitely not a nintendo game. Wouldn`t recommend to a family that may not want to explain all the violence.', 'Avoid'),
+(7, 'PicardParent95', 'https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fredshirtsalwaysdie.com%2Ffiles%2F2016%2F06%2FStar-Trek-Picard-MusicBrainz-Picard.jpg&w=850&h=560&c=sc', 1, 'Would have been better if they were fighting the borg. Not for kids.', 'Adults only'),
+(7, 'RaceTrackRaider', 'https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Speed_Racer_promotional_image.jpg/220px-Speed_Racer_promotional_image.jpg', 2, 'Kind of fun. Wanted at least a horse, no horses. But not for kids.', 'Nope'),
 
+(8, 'DiabloLordOfTerror', 'http://bloody-disgusting.com/wp-content/uploads/2018/01/diablo03.jpg', 5, 'The graphics, the violence, the blood, everything is amazing! Yes! Yes! Yes!', 'All witness the amazingness!'),
+(8, 'SuperSonicFanatic', 'https://vignette.wikia.nocookie.net/sonic/images/f/fc/Hyper_sonic.gif/revision/latest?cb=20160903061927', 1, 'I just skipped this one. Nope.', 'Nope'),
+(8, 'MarioKarter', 'https://mariokart8.nintendo.com/assets/img/top/char_mario.png', 1, 'Garbage.', 'Just stop'),
+(8, 'RaceTrackRaider', 'https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Speed_Racer_promotional_image.jpg/220px-Speed_Racer_promotional_image.jpg', 1, 'I don`t know why I keep reviewing this series. Not for kids.', 'Definitely not for kids'),
+(8, 'PicardParent95', 'https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fredshirtsalwaysdie.com%2Ffiles%2F2016%2F06%2FStar-Trek-Picard-MusicBrainz-Picard.jpg&w=850&h=560&c=sc', 1, 'I would have rather been in space the final frontier.', 'No kids'),
+(8, 'ParentWatcher31', 'https://st2.depositphotos.com/1007027/10184/i/950/depositphotos_101842076-stock-photo-father-and-son-kid-dad.jpg', 1, 'Not for kids. We`ll leave it at that.', 'No kids'),
 
+(9, 'RaceTrackRaider', 'https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Speed_Racer_promotional_image.jpg/220px-Speed_Racer_promotional_image.jpg', 5, 'Fun game great speed. The gore is pixelated in 90s pixels, so a little outdated, but can be scary with the music and the themes. Be advised on this when letting your kids are playing it.', 'Possible play, but violence is a thing to worry about in the game'),
+(9, 'SuperSonicFanatic', 'https://vignette.wikia.nocookie.net/sonic/images/f/fc/Hyper_sonic.gif/revision/latest?cb=20160903061927', 4, 'Made in the same decade as Sonic the Hedgehog. Good game, but scary for kids.', 'May be too scary for younger kids'),
+(9, 'PicardParent95', 'https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fredshirtsalwaysdie.com%2Ffiles%2F2016%2F06%2FStar-Trek-Picard-MusicBrainz-Picard.jpg&w=850&h=560&c=sc', 3, 'This game takes place an alien planet`s base. It is great fun for those of all ages.', 'Make it so'),
+(9, 'DiabloLordOfTerror', 'http://bloody-disgusting.com/wp-content/uploads/2018/01/diablo03.jpg', 4, 'Gore, blood, no Lord of Terror. Good though.', 'Yessssss'),
+(9, 'MarioKarter', 'https://mariokart8.nintendo.com/assets/img/top/char_mario.png', 2, 'Good game, good RPG, not Mario. Kind of scary though.', 'Somewhat scary for kids'),
+(9, 'ParentWatcher31', 'https://st2.depositphotos.com/1007027/10184/i/950/depositphotos_101842076-stock-photo-father-and-son-kid-dad.jpg', 2, 'The parents association I represent said this game was violent.', 'Violent'),
 
+(10, 'ParentWatcher31', 'https://st2.depositphotos.com/1007027/10184/i/950/depositphotos_101842076-stock-photo-father-and-son-kid-dad.jpg', 5, 'Family friendly and fun.', 'Fully recommended'),
+(10, 'PicardParent95', 'https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fredshirtsalwaysdie.com%2Ffiles%2F2016%2F06%2FStar-Trek-Picard-MusicBrainz-Picard.jpg&w=850&h=560&c=sc', 5, 'Star World is in the stars. Ride the Yoshi across space and it will be great.', 'Warp 10! Full Speed Ahead!'),
+(10, 'DiabloLordOfTerror', 'http://bloody-disgusting.com/wp-content/uploads/2018/01/diablo03.jpg', 1, 'A plumber. Seriously? A plumber? No, this game is so boring!!!', 'Ditch the plumber'),
+(10, 'SuperSonicFanatic', 'https://vignette.wikia.nocookie.net/sonic/images/f/fc/Hyper_sonic.gif/revision/latest?cb=20160903061927', 5, 'It is good. I`m a fan of Sonic, but Mario has been a clean form of gameplay for years and I have no complaints at all for any age to play this fun game.', 'Recommended for all'),
+(10, 'MarioKarter', 'https://mariokart8.nintendo.com/assets/img/top/char_mario.png', 5, 'Good game. Inspired Mario Kart and many other games after. Fun clean game.', 'Good and clean'),
+(10, 'RaceTrackRaider', 'https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Speed_Racer_promotional_image.jpg/220px-Speed_Racer_promotional_image.jpg', 3, 'Pace slow at times, but it is a fine game for kids.', 'Recommended'),
 
+(11, 'MarioKarter', 'https://mariokart8.nintendo.com/assets/img/top/char_mario.png', 1, 'Swears, lots of blood and gore and killing.', 'May be too traumatic for young kids'),
+(11, 'DiabloLordOfTerror', 'http://bloody-disgusting.com/wp-content/uploads/2018/01/diablo03.jpg', 5, 'Blood! Death! Yes!!!', 'Play it!'),
+(11, 'SuperSonicFanatic', 'https://vignette.wikia.nocookie.net/sonic/images/f/fc/Hyper_sonic.gif/revision/latest?cb=20160903061927', 2, 'Not the most wholesome game in the world. Probably should wait till kids are older and can understand more', 'More for older kids'),
+(11, 'PicardParent95', 'https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fredshirtsalwaysdie.com%2Ffiles%2F2016%2F06%2FStar-Trek-Picard-MusicBrainz-Picard.jpg&w=850&h=560&c=sc', 2, 'Could be an alien planet where nobody is alive and that could make it fun for kids.', 'Maybe, but maybe not'),
+
+(12, 'DiabloLordOfTerror', 'http://bloody-disgusting.com/wp-content/uploads/2018/01/diablo03.jpg', 5, 'Yes! Much violence! Yes!', 'Just play it'),
+(12, 'PicardParent95', 'https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fredshirtsalwaysdie.com%2Ffiles%2F2016%2F06%2FStar-Trek-Picard-MusicBrainz-Picard.jpg&w=850&h=560&c=sc', 2, 'The alien planet of zombies has returned and has better graphics.', 'Engage!'),
+(12, 'ParentWatcher31', 'https://st2.depositphotos.com/1007027/10184/i/950/depositphotos_101842076-stock-photo-father-and-son-kid-dad.jpg', 1, 'Strongly discourage and not recommend at all.', 'Nope');
 -- Currently Inserting More HERE
-
-
--- (),
 -- Templates for the Posts for more data.
--- (1, 'DiabloLordOfTerror', 'http://bloody-disgusting.com/wp-content/uploads/2018/01/diablo03.jpg', 3, '', ''),
--- (1, 'SuperSonicFanatic', 'https://vignette.wikia.nocookie.net/sonic/images/f/fc/Hyper_sonic.gif/revision/latest?cb=20160903061927', 5, '', ''),
--- (1, 'MarioKarter', 'https://mariokart8.nintendo.com/assets/img/top/char_mario.png', 4, '', ''),
--- (1, 'RaceTrackRaider', 'https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Speed_Racer_promotional_image.jpg/220px-Speed_Racer_promotional_image.jpg', 5, '', ''),
--- (1, 'PicardParent95', 'https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fredshirtsalwaysdie.com%2Ffiles%2F2016%2F06%2FStar-Trek-Picard-MusicBrainz-Picard.jpg&w=850&h=560&c=sc', 3, '', ''),
--- (1, 'ParentWatcher31', 'https://st2.depositphotos.com/1007027/10184/i/950/depositphotos_101842076-stock-photo-father-and-son-kid-dad.jpg', 4, '', '')
-;
+-- (12, 'DiabloLordOfTerror', 'http://bloody-disgusting.com/wp-content/uploads/2018/01/diablo03.jpg', 3, '', ''),
+-- (12, 'SuperSonicFanatic', 'https://vignette.wikia.nocookie.net/sonic/images/f/fc/Hyper_sonic.gif/revision/latest?cb=20160903061927', 5, '', ''),
+-- (12, 'MarioKarter', 'https://mariokart8.nintendo.com/assets/img/top/char_mario.png', 4, '', ''),
+-- (12, 'RaceTrackRaider', 'https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Speed_Racer_promotional_image.jpg/220px-Speed_Racer_promotional_image.jpg', 5, '', ''),
+-- (12, 'PicardParent95', 'https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fredshirtsalwaysdie.com%2Ffiles%2F2016%2F06%2FStar-Trek-Picard-MusicBrainz-Picard.jpg&w=850&h=560&c=sc', 3, '', ''),
+-- (12, 'ParentWatcher31', 'https://st2.depositphotos.com/1007027/10184/i/950/depositphotos_101842076-stock-photo-father-and-son-kid-dad.jpg', 4, '', '');
 
 
 CREATE TABLE IF NOT EXISTS PostComments (

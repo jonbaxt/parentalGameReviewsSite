@@ -4,12 +4,13 @@ const initialState = {
     gameInfo: 'no data',
     gameArtwork: [],
     gameScreenShots: [],
-
+    gamePosts: [],
 }
 
 const GET_GAME_INFO_FROM_DB = 'GET_GAME_INFO_FROM_DB';
 const GET_GAME_ARTWORK_FROM_DB = 'GET_GAME_ARTWORK_FROM_DB';
 const GET_GAME_SCREENSHOTS_FROM_DB = 'GET_GAME_SCREENSHOTS_FROM_DB';
+const GET_GAME_POSTS_FROM_DB = 'GET_GAME_POSTS_FROM_DB';
 
 export function getGameInfoFromDb() {
     let gameData = axios.get('/api/getgamedatafromdb').then( (res) => {
@@ -41,6 +42,16 @@ export function getGameScreenshotsFromDb() {
     }
 }
 
+export function getGamePostsFromDb() {
+    let gamePostArray = axios.get('/api/getgamepostsfromdb').then( (res) => {
+        return res.data;
+    }).catch( (err) => console.log(err));
+    return {
+        type: GET_GAME_POSTS_FROM_DB,
+        payload: gamePostArray
+    }
+}
+
 export default function reducer(state = initialState, action) {
     switch (action.type) {
         case GET_GAME_INFO_FROM_DB + '_FULFILLED': 
@@ -49,6 +60,8 @@ export default function reducer(state = initialState, action) {
             return Object.assign({}, state, { gameArtwork: action.payload });
         case GET_GAME_SCREENSHOTS_FROM_DB + '_FULFILLED':
             return Object.assign({}, state, { gameScreenShots: action.payload });
+        case GET_GAME_POSTS_FROM_DB + '_FULFILLED':
+            return Object.assign({}, state, { gamePosts: action.payload });
         //----------------------------------DEFAULT RETURN----------------------------------
         default:
             return state;

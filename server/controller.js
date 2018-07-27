@@ -129,4 +129,11 @@ module.exports = {
       res.status(200).send(response);
     }).catch( (err) => res.status(400).send(err));
   },
+  getGamePosts: (req, res)=> {
+    const dbInstance = req.app.get('db');
+
+    dbInstance.get_gamereview_posts().then( (response) => {
+      res.status(200).send(response);
+    }).catch( (err) => res.status(400).send(err));
+  },
 }

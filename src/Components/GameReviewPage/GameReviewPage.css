@@ -1,5 +1,5 @@
 .reviewPageMain {
-    width: 100vw;
+    width: 100%;
     /* padding: 10px; */
 }
 
@@ -37,4 +37,33 @@
 .gameTopBlurb>p {
     font-size: 15px;
     margin-bottom: 4px;
+}
+.flexToSide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.flCol {
+    display: flex;
+    flex-direction: column;
+}
+.sliderBox {
+    margin: 0 auto;
+    width: 810px;
+}
+
+.secSpace {
+    margin-top: 60px;
+}
+
+.postSpacing {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.hSpace {
+    margin-top: 10px;
+    font-size: 40px;
+    text-shadow: 1px 1px 2px gray;
+    text-align: center;
 }

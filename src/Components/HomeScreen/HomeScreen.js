@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { getGameInfoFromDb, getGameArtworkFromDb, getGameScreenshotsFromDb } from '../../dux/reducer';
+import { getGameInfoFromDb, getGameArtworkFromDb, getGameScreenshotsFromDb, getGamePostsFromDb } from '../../dux/reducer';
 
 import TitleArea from '../TitleArea/TitleArea';
 import SearchBar from '../SearchBar/SearchBar';
@@ -19,6 +19,9 @@ class HomeScreen extends Component {
         }
         if (this.props.gameScreenShots.length === 0) {
             this.props.getGameScreenshotsFromDb();
+        }
+        if (this.props.gamePosts.length === 0) {
+            this.props.getGamePostsFromDb();
         }
     }
 
@@ -52,12 +55,14 @@ function mapStateToProps(state) {
     return {
         gameInfo: state.gameInfo,
         gameArtwork: state.gameArtwork,
-        gameScreenShots: state.gameScreenShots
+        gameScreenShots: state.gameScreenShots,
+        gamePosts: state.gamePosts
     }
 }
 let mapDispatchToProps = {
     getGameInfoFromDb,
     getGameArtworkFromDb,
-    getGameScreenshotsFromDb
+    getGameScreenshotsFromDb,
+    getGamePostsFromDb
 }
 export default connect(mapStateToProps, mapDispatchToProps)(HomeScreen);
