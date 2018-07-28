@@ -5,6 +5,7 @@ import { getGameInfoFromDb, getGameArtworkFromDb, getGameScreenshotsFromDb, getG
 import ScreenShotSlideshow from '../ScreenShotSlideshow/ScreenShotSlideshow';
 import ArtworkSlideshow from '../ArtworkSlideshow/ArtworkSlideshow';
 import Post from '../Post/Post';
+import Rating from '../Rating/Rating';
 import './GameReviewPage.css';
 const _ = require('lodash');
 
@@ -29,13 +30,25 @@ class GameReviewPage extends React.Component {
                 return '';
             }
         });
+        let overallRating = 0;
+            if(this.props.gamePosts.length !== 0){
+                let scores = this.props.gamePosts.filter(el=> gameId+1 === el.gameinfo_id).map((element) => element.user_rating)
+                for(let i=0; i<scores.length; i++){
+                    overallRating = overallRating + scores[i];
+                }           
+                overallRating = overallRating / scores.length;
+                let t = String(overallRating);
+                let temp = t.charAt(0);
+                let saved = Number(temp);
+                overallRating = saved;
+            }
         return (
             <div className='reviewPageMain'>
                 <Link to='/'>Back to Home Page</Link>
                 <header className='gameTopBlurb' >
                     <h1>{this.props.gameInfo[gameId].game_name}</h1>
                     <h2>IGDB Game Rating: {this.props.gameInfo[gameId].igdb_rating}</h2>
-                    <h2>Parental Game Overall Rating:<span role='img'>🔥🔥🔥🔥🔥</span> </h2>
+                    <h2>Parental Game Overall Rating: <Rating rate={overallRating} /> </h2>
                     <span>
                         <img src={'http://' + this.props.gameInfo[gameId].cover_img_url} alt='' /></span>
                     <h3>Game Summary</h3>

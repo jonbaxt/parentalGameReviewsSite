@@ -6,7 +6,6 @@ import './Post.css';
 const _ = require('lodash');
 
 function Post(props) {
-    console.log(props.postId);
     let index = _.findIndex(props.gamePosts, (current) => current.post_id === props.postId);
     return (
         <div className='gamePostBlurb'>
