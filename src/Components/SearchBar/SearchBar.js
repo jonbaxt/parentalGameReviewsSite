@@ -45,10 +45,12 @@ class SearchBar extends Component {
                         onClick={() => { 
                             this.props.queryGameTitleFromIgdb(this.state.searchText)
                             this.handleSearchVisModal() }}
+                        disabled={!this.state.searchText}
                     >Search</button>
                     <button
                         className='buttonStyled'
                         onClick={()=> this.clearSearchBar()}
+                        disabled={!this.state.searchText}
                     >Clear</button>
                 </div>
                 <div className={this.state.searchVis ? 'visOn' : 'vis'} ><SearchResults results={this.props.tempGameSearchStore} /></div>

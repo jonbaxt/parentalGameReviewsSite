@@ -24,12 +24,17 @@
 
 .inputBoxStyled {
     width: 80vw;
-    background: rgb(130,255,166);
+    background: rgb(178,108,108);
     border: none;
     color: white;
+    font-weight: bold;
     border-bottom: 2px solid rgb(178,108,108);
 }
+.inputBoxStyled::placeholder {
+    color: lightpink;
+}
 .inputBoxStyled:focus {
+    background: rgb(130,255,166);
     border-bottom: 1px solid rgb(178,108,108);
 }
 
@@ -41,6 +46,9 @@
     border: 1px solid white;
     border-radius: 8px;
 
+}
+.buttonStyled:disabled {
+    background: gray;
 }
 .vis {
     display: none;

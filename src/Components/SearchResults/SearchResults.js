@@ -24,13 +24,11 @@ class SearchResults extends Component {
         this.setState({ gamesToStoreInDB: newArr, addButtonsArray: newButDis });
     }
     handleRemoveButton(gameToRemoveId) {
-        // let newArr = _.difference(this.state.addButtonsArray, gameToRemoveId);
+        let newArr = _.pullAllBy(this.state.gamesToStoreInDB, [{ 'id': gameToRemoveId }], 'id');
 
-        let buttons = _.remove(this.state.addButtonsArray, function(n) {
-            return n === gameToRemoveId;
-          });
+        let buttons = _.pull(this.state.addButtonsArray, gameToRemoveId);
         console.log(buttons);
-        this.setState({ addButtonsArray: buttons });
+        this.setState({  gamesToStoreInDB: newArr, addButtonsArray: buttons });
     }
     isButtonNotDisabled(buttonId) {
         for (let key in this.state.addButtonsArray) {
@@ -61,7 +59,8 @@ class SearchResults extends Component {
             <div className='searchResMain'>
                 <div className='searchModal'>
                     {gamesToImportToWebsiteList}
-
+                    
+                    <button  >Add Games To Site</button>
                 </div>
             </div>
         )
