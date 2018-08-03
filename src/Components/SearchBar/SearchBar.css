@@ -42,3 +42,12 @@
     border-radius: 8px;
 
 }
+.vis {
+    display: none;
+}
+.visOn {
+    display: inline;
+    position: fixed;
+    left: 100px;
+    top: 75px;
+}

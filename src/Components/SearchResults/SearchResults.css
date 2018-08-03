@@ -1,0 +1,43 @@
+.searchResMain {
+    width: 100%;
+    position: fixed;
+    /* position: absolute; */
+    overflow: auto;
+    /* overflow: hidden; */
+}
+
+.searchResMain:focus {
+    background: black;
+    opacity: 0.8;
+}
+
+.searchModal {
+    margin: 20px;
+    margin-right: 300px;
+    width: 80%;
+    height: 85vh;
+    background: rgb(130,255,166);
+    box-shadow: 1px 1px 2px rgb(255,80,80);
+    overflow: auto;
+    /* position: absolute; */
+}
+
+.addButton {
+    color: white;
+    background: rgb(255,80,80);
+    border: 1px white solid;
+    border-radius: 20px;
+}
+
+.addButton:disabled {
+    background: gray;
+}
+.remButton {
+    color: white;
+    background: rgb(255,80,80);
+    border: 1px white solid;
+    border-radius: 20px;
+}
+.remButton:disabled {
+    background: grey;
+}
