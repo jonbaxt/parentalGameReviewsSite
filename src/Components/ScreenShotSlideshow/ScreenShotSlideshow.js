@@ -18,7 +18,7 @@ class ScreenShotSlideshow extends React.Component {
         };
         let shots = this.props.gameScreenShots.map( (element) => {
             if(element.gameinfo_id === this.props.gameId){ 
-            return (<div className='imageCont' key={element.screenshot_id} ><img src={'http://' + element.image_url} alt='' /></div>)
+            return (<div className='imageCont' key={element.screenshot_id} ><img src={'https://' + element.image_url} alt='' /></div>)
             } else {
                 return '';
             }

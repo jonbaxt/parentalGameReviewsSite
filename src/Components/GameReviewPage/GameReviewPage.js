@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { getGameInfoFromDb, getGameArtworkFromDb, getGameScreenshotsFromDb, getGamePostsFromDb } from '../../dux/reducer';
+import { getGameInfoFromDb, getGameArtworkFromDb, getGameScreenshotsFromDb, getGamePostsFromDb, postNewGamePostToDb } from '../../dux/reducer';
 import ScreenShotSlideshow from '../ScreenShotSlideshow/ScreenShotSlideshow';
 import ArtworkSlideshow from '../ArtworkSlideshow/ArtworkSlideshow';
 import Post from '../Post/Post';
@@ -45,7 +45,16 @@ class GameReviewPage extends React.Component {
         this.setState({ userRecommendation: e });
     }
     handleSubmission() {
-        console.log('submit to database')
+        let newPost = {
+            gameinfo_id: Number(this.props.match.params.id),
+            username: this.state.userName,
+            user_img_url: this.state.userImage,
+            user_rating: Number(this.state.userRating),
+            user_review: this.state.userReview,
+            recommendation: this.state.userRecommendation
+        }
+        this.props.postNewGamePostToDb(Number(this.props.match.params.id), newPost);
+        this.setState({ userName: '', userImage: '', userReview: '', userRating: 0, userRecommendation: '' });
     }
     render() {
         let gameId = this.props.match.params.id - 1;
@@ -73,7 +82,7 @@ class GameReviewPage extends React.Component {
         let previewImage = this.state.userImage === '' ? 'http://saveabandonedbabies.org/wp-content/uploads/2015/08/default.png' : this.state.userImage;
         return (
             <div className='reviewPageMain'>
-                <Link to='/'>Back to Home Page</Link>
+                <div style={{display: 'flex', justifyContent: 'center'}} ><Link to='/'>Back to Home Page</Link></div>
                 <header className='gameTopBlurb' >
                     <h1>{this.props.gameInfo[gameId].game_name}</h1>
                     <h2>IGDB Game Rating: {this.props.gameInfo[gameId].igdb_rating}</h2>
@@ -132,4 +141,4 @@ let mapStateToProps = (state) => {
         gamePosts: state.gamePosts
     }
 }
-export default connect(mapStateToProps, { getGameInfoFromDb, getGameArtworkFromDb, getGameScreenshotsFromDb, getGamePostsFromDb })(GameReviewPage);
+export default connect(mapStateToProps, { getGameInfoFromDb, getGameArtworkFromDb, getGameScreenshotsFromDb, getGamePostsFromDb, postNewGamePostToDb })(GameReviewPage);
