@@ -39,6 +39,7 @@
 }
 
 .buttonStyled {
+    cursor: pointer;
     pointer-events: hand;
     width: 60px;
     background: rgb(178,108,108);
@@ -48,6 +49,7 @@
 
 }
 .buttonStyled:disabled {
+    cursor: pointer;
     background: gray;
 }
 .vis {

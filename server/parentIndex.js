@@ -36,5 +36,6 @@ app.get('/api/getgamedatafromdb', con.getSavedGameInfoFromIGDB);
 app.get('/api/getgameartworkfromdb', con.getGameArtwork);
 app.get('/api/getgamescreenshotsfromdb', con.getGameScreenShots);
 app.get('/api/getgamepostsfromdb', con.getGamePosts);
+app.post('/api/postnewreviewtodb/:id', con.postNewReview);
 
 app.listen(SERVER_PORT, ()=> console.log(`Connect on port ${SERVER_PORT}`));

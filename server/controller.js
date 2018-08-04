@@ -136,4 +136,15 @@ module.exports = {
       res.status(200).send(response);
     }).catch( (err) => res.status(400).send(err));
   },
+  postNewReview: (req, res) => {
+    const dbInstance = req.app.get('db');
+    const gameId = Number(req.params.id);
+    const POSTSTUFF = req.body;
+    console.log(gameId);
+    console.log(POSTSTUFF);
+
+    // dbInstance.post_review([]).then( (response) => {
+    //   res.status(200).send(response);
+    // }).catch( err => res.status(400).send(err));
+  },
 }

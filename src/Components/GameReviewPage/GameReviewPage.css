@@ -67,3 +67,25 @@
     text-shadow: 1px 1px 2px gray;
     text-align: center;
 }
+
+#newHeaderStyle {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+.submitButton {
+    cursor: pointer;
+    width: 100px;
+    background: rgb(178,108,108);
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+}
