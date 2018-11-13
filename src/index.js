@@ -6,7 +6,7 @@ import { HashRouter } from 'react-router-dom';
 import './index.css';
 import store from './dux/store';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+// import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
     <Provider store={store} >
@@ -15,4 +15,4 @@ ReactDOM.render(
         </HashRouter>
     </Provider>
     , document.getElementById('root'));
-registerServiceWorker();
+// registerServiceWorker();
